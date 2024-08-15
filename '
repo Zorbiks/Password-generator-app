@@ -1,0 +1,11 @@
+/* Fonts */
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-weight: normal;
+	src: url('../assets/fonts/static/JetBrainsMono-Bold.ttf') format(ttf);
+} 
+
+/* Colors */
+:root {
+	/* Primary */
+}

@@ -1,0 +1,51 @@
+/* Fonts */
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-weight: 400;
+	src: url('../assets/fonts/static/JetBrainsMono-Bold.ttf');
+} 
+
+/* Colors */
+:root {
+	/* Primary */
+	--green: #a4ffaf;
+	--yellow: #f7ce65;
+	--orange: #fb7b58;
+	--red: #f54949;
+
+	/* Neutral */
+	--black: #18171f;
+	--dim-black: #24232b;
+	--gray: #807d92;
+	--white: #e6e5ea;
+}
+.fg-green {
+	color: var(--green);
+}
+
+/* Global Rules */
+body {
+	background-color: var(--black);
+	font-family: 'JetBrains Mono', monospace;
+	color: var(--white);
+}
+h1 {
+	color: var(--gray);
+}
+
+
+
+
+.card_ {
+	max-width: 420px;
+}
+
+.box {
+	background-color: var(--dim-black);
+}
+.box .copy-btn img {
+	width: 18px;
+}
+.box .copy-btn:hover img {
+	filter: saturate(0);
+}
