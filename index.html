@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,12 +13,53 @@
 			<div class="container">
 				<h1 class="fs-5 text-center mb-4">Password Generator</h1>
 				<div class="card_ m-auto">
-					<div class="box py-3 px-4 d-flex justify-content-between align-items-center gap-3">
+					<div class="box bg-dim-black py-3 px-4 mb-3 d-flex justify-content-between align-items-center gap-3">
 						<div class="fs-4">PTx1ff5DaFX</div>
 						<div class="d-flex align-items-center gap-3">
 							<div class="text-uppercase fg-green">Copied</div>
 							<button class="copy-btn bg-transparent border-0"><img src="assets/images/icon-copy.svg" alt="copy"></button>
 						</div>
+					</div>
+					<div class="box bg-dim-black p-4">
+						<div class="mb-4 d-flex justify-content-between align-items-center">
+							<div>Character Length</div>
+							<div class="fs-4 fg-green">10</div>
+						</div>
+						<form>
+							<input class="w-100 mb-4" type="range" name="passLength" min="1" max="20">
+							<div class="mb-2 d-flex align-items-center">
+								<input id="uppercase" class="me-3" type="checkbox" name="uppercase">
+								<label for="uppercase">Include Uppercase Letters</label>
+							</div>
+							<div class="mb-2 d-flex align-items-center">
+								<input id="lowercase" class="me-3" type="checkbox" name="lowercase">
+								<label for="lowercase">Include Lowercase Letters</label>
+							</div>
+							<div class="mb-2 d-flex align-items-center">
+								<input id="numbers" class="me-3" type="checkbox" name="numbers">
+								<label for="numbers">Include Numbers</label>
+							</div>
+							<div class="mb-4 d-flex align-items-center">
+								<input id="symbols" class="me-3" type="checkbox" name="symbols">
+								<label for="symbols">Include Symbols</label>
+							</div>
+						</form>
+						<div class="box mb-4 py-3 px-4 bg-black">
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="fg-gray text-uppercase">Strength</div>
+								<div class="d-flex align-items-center gap-2">
+									<div class="text-uppercase fs-5">Medium</div>
+									<ul class="strength-bars weak align-self-stretch m-0 list-unstyled d-flex align-items-center gap-1">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="d-flex justify-content-center align-items-center gap-2 border-0 w-100 py-3">Generate<img src="assets/images/icon-arrow-right.svg" alt="Arrow right">
+						</button>
 					</div>
 				</div>
 			</div>

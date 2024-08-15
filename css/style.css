@@ -19,6 +19,15 @@
 	--gray: #807d92;
 	--white: #e6e5ea;
 }
+.bg-dim-black {
+	background-color: var(--dim-black);
+}
+.bg-black {
+	background-color: var(--black) !important;
+}
+.fg-gray {
+	color: var(--gray);
+}
 .fg-green {
 	color: var(--green);
 }
@@ -40,12 +49,89 @@ h1 {
 	max-width: 420px;
 }
 
-.box {
-	background-color: var(--dim-black);
-}
 .box .copy-btn img {
 	width: 18px;
 }
 .box .copy-btn:hover img {
 	filter: saturate(0);
+}
+form input[type=range] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: var(--black);
+	height: .4rem;
+}
+form input[type=range]::-moz-range-thumb {
+	-moz-appearance: none;
+	appearance: none;
+	height: 1.2rem;
+	width: 1.2rem;
+	border-radius: 50%;
+	background-color: var(--white);
+	cursor: pointer;
+	border: 2px solid var(--white);
+}
+form input[type=range]:active::-moz-range-thumb {
+	background-color: var(--black);
+	border: 2px solid var(--green);
+}
+form input[type=range]::-moz-range-progress {
+	background-color: var(--green);
+	height: .4rem;
+}
+form input[type=checkbox] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	height: 1.1rem;
+	width: 1.1rem;
+	border: 1px solid var(--green);
+}
+form input[type=checkbox]:checked {
+	position: relative;
+	background-color: var(--green);
+}
+form input[type=checkbox]:checked::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/images/icon-check.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.strength-bars li {
+	border: 1px solid var(--white);
+	width: 8px;
+	height: 80%;
+}
+.strength-bars.too-weak li:nth-child(1) {
+	border: none;
+	background-color: var(--red);
+}
+.strength-bars.weak li:nth-child(-n+2) {
+	border: none;
+	background-color: var(--orange);
+}
+.strength-bars.medium li:nth-child(-n+3) {
+	border: none;
+	background-color: var(--yellow);
+}
+.strength-bars.strong li {
+	border: none;
+	background-color: var(--green);
+}
+button[type=submit] {
+	background-color: var(--green);
+}
+button[type=submit]:hover {
+	color: var(--green);
+	background-color: transparent;
+	outline: 2px solid var(--green) !important;
+}
+button[type=submit]:hover img {
+	filter: invert(100%) sepia(100%);
 }
