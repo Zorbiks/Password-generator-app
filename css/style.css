@@ -46,7 +46,7 @@ h1 {
 
 
 .card_ {
-	max-width: 420px;
+	max-width: 447px;
 }
 
 .box .copy-btn img {
@@ -55,14 +55,14 @@ h1 {
 .box .copy-btn:hover img {
 	filter: saturate(0);
 }
-form input[type=range] {
+input[type=range] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	background-color: var(--black);
 	height: .4rem;
 }
-form input[type=range]::-moz-range-thumb {
+input[type=range]::-moz-range-thumb {
 	-moz-appearance: none;
 	appearance: none;
 	height: 1.2rem;
@@ -72,27 +72,28 @@ form input[type=range]::-moz-range-thumb {
 	cursor: pointer;
 	border: 2px solid var(--white);
 }
-form input[type=range]:active::-moz-range-thumb {
+input[type=range]:active::-moz-range-thumb {
 	background-color: var(--black);
 	border: 2px solid var(--green);
 }
-form input[type=range]::-moz-range-progress {
+input[type=range]::-moz-range-progress {
 	background-color: var(--green);
 	height: .4rem;
 }
-form input[type=checkbox] {
+input[type=checkbox] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	height: 1.1rem;
 	width: 1.1rem;
 	border: 1px solid var(--green);
+	cursor: pointer;
 }
-form input[type=checkbox]:checked {
+input[type=checkbox]:checked {
 	position: relative;
 	background-color: var(--green);
 }
-form input[type=checkbox]:checked::before {
+input[type=checkbox]:checked::before {
 	content: '';
 	position: absolute;
 	top: 0;
